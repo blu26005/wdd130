@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #d3d3d3, #001f3f);
+  background-repeat: no-repeat; /* Just in case */
+  background-attachment: fixed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header-image {
+  background-image: url('../images/icenter.png'); /* Replace with your image */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+
+}
+
+.header-image h1 {
+  margin: 0;
+  line-height: 0.9;
+    font-size: 3.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background: #00000055;
+}
+
+.content-box {
+  background-color: white;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
+  padding: 40px;
+  box-shadow: 5px 5px 0px black;
+  min-height: 400px;
+}
+
+.content-box h2 {
+  margin-top: 35px;
+  color: #001f3f;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.content-box p {
+  max-width: 450px;
+  margin: 0 auto 20px;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+th,
+td {
+  border: 1px solid #001f3f;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #001f3f;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 35px auto 0;
+  max-width: 450px;
+  text-align: left;
+}
+
+form label {
+  font-weight: bold;
+  color: #001f3f;
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #001f3f;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form input[type="submit"] {
+  margin-top: 15px;
+  background-color: #001f3f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #345b7d;
+}

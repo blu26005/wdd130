@@ -1,0 +1,400 @@
+:root {
+    --deep-teal-blue: #0F5C78;
+    --mountain-teal: #1F8FA3;
+    --light-teal: #5CC8CC;
+    --snow: #E8FAF8;
+    --burnt-orange: #B84A14;
+    --deep-slate: #12323D;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--snow);
+    color: var(--deep-slate);
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: var(--burnt-orange);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: var(--deep-teal-blue);
+    color: white;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0.25rem 0 0;
+    color: var(--light-teal);
+    font-size: 1.1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background-color: var(--mountain-teal);
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    line-height: 1.6;
+    text-decoration: none;
+    border-radius: 0.35rem;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--light-teal);
+    color: var(--deep-slate);
+}
+
+main {
+    width: min(92%, 1100px);
+    margin: 0 auto;
+}
+
+section {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: white;
+    border: 2px solid var(--light-teal);
+    border-radius: 0.75rem;
+}
+
+section h2 {
+    margin-top: 0;
+    color: var(--mountain-teal);
+    font-size: 1.8rem;
+}
+
+#welcome {
+    text-align: center;
+}
+
+#welcome p {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.project-card {
+    overflow: hidden;
+    padding: 1rem;
+    border: 2px solid var(--light-teal);
+    border-radius: 0.6rem;
+    background-color: var(--snow);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0.4rem;
+}
+
+.project-card h3 {
+    margin-bottom: 0.25rem;
+    color: var(--mountain-teal);
+}
+
+.project-card p {
+    margin-top: 0;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--burnt-orange);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.project-card a:hover,
+.project-card a:focus {
+    color: var(--mountain-teal);
+    text-decoration: underline;
+}
+
+#progress table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: white;
+}
+
+#progress caption {
+    margin-bottom: 0.75rem;
+    color: var(--deep-slate);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+#progress th,
+#progress td {
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--light-teal);
+    text-align: left;
+}
+
+#progress th {
+    background-color: var(--mountain-teal);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+#progress tr:nth-child(even) {
+    background-color: var(--snow);
+}
+
+#progress td a {
+    color: var(--burnt-orange);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#progress td a:hover,
+#progress td a:focus {
+    color: var(--mountain-teal);
+    text-decoration: underline;
+}
+
+#learning-feedback {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+#learning-feedback > div {
+    padding: 1rem;
+}
+
+#learning ul {
+    margin: 1rem 0 0;
+    padding: 1.25rem 2rem;
+    background-color: var(--snow);
+    border-radius: 0.5rem;
+}
+
+#learning li {
+    margin: 0.35rem 0;
+}
+
+#feedback form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#feedback label {
+    font-weight: 600;
+}
+
+#feedback input,
+#feedback textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--light-teal);
+    border-radius: 0.35rem;
+    background-color: white;
+    color: var(--deep-slate);
+    font: inherit;
+}
+
+#feedback textarea {
+    resize: vertical;
+}
+
+#feedback button {
+    width: fit-content;
+    margin-top: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 0.35rem;
+    background-color: var(--burnt-orange);
+    color: white;
+    cursor: pointer;
+}
+
+#feedback button:hover,
+#feedback button:focus {
+    background-color: var(--mountain-teal);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: var(--deep-teal-blue);
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer nav {
+    gap: 0.5rem;
+    padding: 0;
+    background-color: transparent;
+}
+
+footer nav a {
+    padding: 0.35rem 0.75rem;
+    color: white;
+    font-size: 0.9rem;
+}
+
+footer nav a:hover,
+footer nav a:focus {
+    background-color: var(--light-teal);
+    color: var(--deep-slate);
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header img {
+        width: 85px;
+        height: 85px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 0.35rem;
+    }
+
+    nav a {
+        padding: 0.45rem 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 1.25rem;
+    }
+
+    .project-cards {
+        grid-template-columns: 1fr;
+    }
+
+    #learning-feedback {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    #progress {
+        overflow-x: auto;
+    }
+
+    #progress table {
+        min-width: 500px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer nav {
+        flex-wrap: wrap;
+    }
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.project-link img {
+    width: 22px;
+    height: 22px;
+}
+
+.progress-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.progress-link img {
+    width: 20px;
+    height: 20px;
+}
+
+.back-to-top {
+    display: grid;
+    width: 48px;
+    height: 48px;
+    margin: 0 1.5rem 1rem auto;
+    place-items: center;
+    border: 2px solid var(--light-teal);
+    border-radius: 50%;
+    background-color: white;
+}
+
+.back-to-top img {
+    width: 28px;
+    height: 28px;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+    background-color: var(--light-teal);
+}

@@ -1,0 +1,144 @@
+"""index.html"""
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 - My Web Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body id="top">
+    <header>
+        <a href="index.html">
+            <img src="images/logo-mountain-badge-v2.png" alt="Mountain and river RB logo">
+        </a>
+        <div>
+            <h1>Ryan Blunck's Portal Page</h1>
+            <p>BYU-Idaho, WDD 130 - Web Fundamentals</p>
+        </div>
+    </header>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="wwr/index.html" target="_blank" rel="noopener noreferrer">WWR</a>
+            <a href="ice.html">ICE</a>
+            <a href="index.html#about">About Me</a>
+        </nav>
+    <main>
+        <section id="welcome">
+            <h2>Welcome to My Portal</h2>
+            <p>
+                This portal showcases my progress and projects as I learn HTML, CSS, and web development in WDD 130.
+            </p>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                My name is Ryan Blunck. I am learning how to build websites using HTML, CSS, responsive design, and CSS Grid in WDD 130.
+            </p>
+            <p>
+                This portfolio documents my coursework, projects, and progress as I develop my web design and coding skills.
+            </p>
+        </section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-cards">
+                <article class="project-card">
+                    <img src="images/Whitewater-rafting-adventure.png" alt="Group whitewater rafting on a river">
+                    <h3>White Water Rafting</h3>
+                    <p>
+                        A rafting website project featuring page layout, navigation, images, and responsive design.
+                    </p>
+                    <a class="project-link" href="wwr/index.html" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icons/teal/view-project.svg" alt="" aria-hidden="true">
+                        View WWR Project
+                    </a>
+                </article>
+                <article class="project-card">
+                    <img src="images/Coding-Workspace.png" alt="Laptop displaying HTML code">
+                    <h3>ICE Challenges</h3>
+                    <p>
+                        Coding exercises that helped me practice HTML, CSS, layout, and web design skills.
+                    </p>
+                    <a class="project-link" href="ice.html">
+                        <img src="images/icons/teal/view-project.svg" alt="" aria-hidden="true">
+                        Explore ICE Assignments
+                    </a>
+                </article>
+            </div>
+        </section>
+        <section id="progress">
+            <h2>Course Progress</h2>
+            <table>
+                <caption>Current WDD 130 coursework status</caption>
+                <thead>
+                    <tr>
+                        <th>Coursework</th>
+                        <th>Status</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>WWR Project</td>
+                        <td>Complete</td>
+                        <td>
+                            <a class="progress-link" href="wwr/index.html" target="_blank" rel="noopener noreferrer">
+                                <img src="images/icons/teal/view-project.svg" alt="" aria-hidden="true">
+                                Open
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ICE Challenges</td>
+                        <td>In progress</td>
+                        <td>
+                            <a class="progress-link" href="ice.html">
+                                <img src="images/icons/teal/view-project.svg" alt="" aria-hidden="true">
+                                Open
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="learning-feedback">
+            <div id="learning">
+                <h2>What I’m Learning</h2>
+                <p>A short list of current learning topics:</p>
+                <ul>
+                    <li>HTML structure</li>
+                    <li>CSS styling</li>
+                    <li>CSS Grid</li>
+                </ul>
+            </div>
+            <div id="feedback">
+                <h2>Quick Feedback</h2>
+                <p>Share your feedback about my portal page.</p>
+                <form action="#" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <a class="back-to-top" href="#top" aria-label="Back to top">
+        <img src="images/icons/teal/back-to-top.svg" alt="" aria-hidden="true">
+    </a>
+    <footer>
+        <p>&copy; 2026 My Web Portfolio</p>
+        <nav aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="wwr/index.html" target="_blank" rel="noopener noreferrer">WWR</a>
+            <a href="ice.html">ICE</a>
+            <a href="index.html#about">About Me</a>
+        </nav>
+    </footer>
+</body>
+</html>
